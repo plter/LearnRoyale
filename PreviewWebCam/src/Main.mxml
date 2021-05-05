@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<j:Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:j="library://ns.apache.org/royale/jewel"
+                xmlns:js="library://ns.apache.org/royale/basic" xmlns:html="library://ns.apache.org/royale/html"
+                applicationComplete="initHandler()">
+
+    <fx:Script>
+        <![CDATA[
+
+            private function initHandler():void
+            {
+                var player:HTMLVideoElement = document.createElement("video") as HTMLVideoElement;
+                player.width = 320;
+                player.height = 240;
+                player.muted = true;
+                player.autoplay = true;
+                player.style.backgroundColor = "black";
+                
+                playerContainer.element.appendChild(player);
+
+                (navigator.mediaDevices as Object).getUserMedia({video:true,audio:true}).then(function(stream:MediaStream):void{
+                    player.srcObject = stream;
+                });
+            }
+        ]]>
+    </fx:Script>
+
+    <j:initialView>
+        <j:View style="padding:1rem">
+            <j:VGroup >
+                <j:Card>
+                    <html:H3 text="Webcam"/>
+                    <html:Div localId="playerContainer"/>
+                </j:Card>
+            </j:VGroup>
+        </j:View>
+    </j:initialView>
+   
+</j:Application>

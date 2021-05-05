@@ -5,10 +5,8 @@
             "src"
         ],
         "theme": "${royalelib}/themes/JewelTheme/src/main/resources/defaults.css",
-        "html-template": "src/index.template.html",
         "source-map": true,
         "debug": false
     },
-    "additionalOptions": "-js-dynamic-access-unknown-members=true",
     "mainClass": "Main"
 }
