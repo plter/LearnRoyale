@@ -1,0 +1,9 @@
+{
+    "config": "node",
+    "compilerOptions": {
+        "source-path": [
+            "src"
+        ]
+    },
+    "mainClass": "Main"
+}

@@ -1,0 +1,9 @@
+{
+    "config": "royale",
+    "compilerOptions": {
+        "source-path": [
+            "src"
+        ]
+    },
+    "mainClass": "Main"
+}
