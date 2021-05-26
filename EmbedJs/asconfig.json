@@ -1,0 +1,11 @@
+{
+    "config": "royale",
+    "compilerOptions": {
+        "source-map": true,
+        "source-path": [
+            "src"
+        ],
+        "output": "output"
+    },
+    "mainClass": "top.yunp.embedjs.Main"
+}
