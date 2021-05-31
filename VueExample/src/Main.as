@@ -1,7 +1,6 @@
 package {
 
     import org.apache.royale.utils.Language;
-    import org.apache.royale.utils.js.loadJavascript;
 
     public class Main {
 
