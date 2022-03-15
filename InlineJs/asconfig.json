@@ -1,0 +1,10 @@
+{
+    "config": "royale",
+    "compilerOptions": {
+        "source-map": true,
+        "source-path": [
+            "src"
+        ]
+    },
+    "mainClass": "Main"
+}
